@@ -2,7 +2,11 @@
 
 # CONSULTAS SQL
 
+## Tabla usuario
+
 ![tabla usuario](img/tabla%20usuario.png "tabla usuario")
+
+## COMANDO SELECT
 
 1. Para visualizar toda la informacion que contiene la tabla `usuario`s se puede incluir con lainstruccion SELECT el caracter '*' o cada uno de los campos de la tabla
 
@@ -50,3 +54,37 @@ O se puede utilizar el operador OR.
 `SELECT * FROM usuario WHERE nombre LIKE '%a%'`
 
 ![consulta 7](img/consulta7.png "consulta 7")
+
+8. si se desea obtener los registros donde la cuarta lletra del nombre sea una 'a'.
+
+`SELECT * FROM usuario WHERE nombre LIKE '___a%'`
+
+![consulta 8](img/consulta8.png "consulta 8")
+
+9. si se desea obtener los registros cuya identificacio este entre el intervalo 110 y 150, se debe utilizar la clausula BETWEEN, que sirve para espicificar un intervalo de valores.
+
+`SELECT * FROM usuario WHERE Identificación '110` AND '150'
+
+![consulta 9](img/consulta9.png "consulta 9")
+
+
+
+
+## COMANDO DELETE
+
+10. Para eliminar solamente los registros suya identificacion sea mayor de 130.
+
+`DELETE FROM usuario WHERE Identificación>'130'`
+
+![consulta 10](img/consulta10.png "consulta 10")
+![consulta 10_2](img/consulta10_2.png "consulta 10_2")
+
+
+## COMANDO UPDATE
+
+11. Para actualizar la ciudad de nacimiento de Cristian Vanegas, cuya Identificación es 114.
+
+`UPDATE usuario SET ciudad nac = 'Manizales' WHERE Identificación='114'`
+
+![consulta 11](img/consulta11.png "consulta 11")
+![consulta 11_2](img/consulta11_2.png "consulta 11_2")
