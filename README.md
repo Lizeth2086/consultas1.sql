@@ -1,6 +1,6 @@
 # consultas1.sql
 
-#CONSULTAS SQL
+# CONSULTAS SQL
 
 ![tabla usuario](img/tabla%20usuario.png "tabla usuario")
 
@@ -33,3 +33,9 @@ O se puede utilizar el operador OR.
 `SELECT apellidos FROM usuario WHERE apellidos='Vanegas' OR apellidos='Cetina'`
 
 ![consulta 4_2](img/consulta4_2.png "consulta 4_2")
+
+5. si se desea obtener los registros cuya identificacion sea menor de '110' y la ciudad sea 'Cali', se debe utilizar el operador AND.
+
+`SELECT * FROM usuario WHERE Identificacion<'110' AND ciudad_nac='Cali'`
+
+![consulta 5](img/consulta5.png "consulta 5")
