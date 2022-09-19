@@ -88,3 +88,19 @@ O se puede utilizar el operador OR.
 
 ![consulta 11](img/consulta11.png "consulta 11")
 ![consulta 11_2](img/consulta11_2.png "consulta 11_2")
+
+
+## INNER JOIN
+
+Permite obtener datos de dos o mas tablas.Cuando se realiza la concatenacion de las tablas, no necesariamente se deben mostrar todos los datos de las tablas.
+
+## Tabla pedidos
+
+![Tabla pedidos](img/Tabla%20pedidos.png "Tabla pedidos")
+
+12. Para visualizar los campos identificacion, nombre, apellidos de la tabla usuario y nropedido, fecha de compra, fecha de vencimiento y observacion de latabla pedidos, se debe realizar la siguiente instruccion SQL:
+
+`SELECT usuario.Identificacion, usuario.nombre, usuario.apellidos, pedido.nropedido, pedidos.fechaCompra, pedidos.fechaVence, pedidos.observacion FROM usuario INNER JOIN pedidos ON usuario.Identificacion = pedidos.Identificacion`
+
+![consulta 12](img/consulta12.png "consulta 12")
+
